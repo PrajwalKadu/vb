@@ -1,0 +1,22 @@
+ModuleModule1
+PublicClassLine
+Private length AsDouble
+PublicSubNew(ByVallenAsDouble)
+Console.WriteLine("Object is being created length:{0}", len)
+        length = len
+EndSub
+PublicSubsetlength(ByVallenAsDouble)
+        length = len
+EndSub
+PublicFunctiongetlength() AsDouble
+Return length
+EndFunction
+SubMain()
+Dim Line AsLine = NewLine(10.0)
+Console.WriteLine("length of line set by constructor:{0}", Line.getlength())
+Line.setlength(6.0)
+Console.WriteLine("length of line set by setlength:{0}", Line.getlength())
+Console.ReadKey()
+EndSub
+End Class
+EndModule

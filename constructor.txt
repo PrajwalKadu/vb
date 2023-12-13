@@ -1,0 +1,22 @@
+Public Class Line
+    Private length As Double
+    Public Sub New()
+        Console.WriteLine("Object is being  created ")
+    End Sub
+    Public Sub setlength(ByVal len As Double)
+        length = len
+    End Sub
+    Public Function getlength() As Double
+        Return Length
+    End Function
+End Class
+
+Module Module1
+
+    Sub Main()
+        Dim line As Line = New Line()
+        line.setlength(6.0)
+        Console.WriteLine("Length of line:{0}", line.getlength())
+        Console.ReadKey()
+    End Sub
+End Module

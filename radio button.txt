@@ -1,0 +1,28 @@
+PublicClassForm1
+PrivateSub Form1_Load(ByVal sender AsSystem.Object, ByVal e AsSystem.EventArgs) HandlesMyBase.Load
+Me.Text = "tutorialpoint.com"
+EndSub
+PrivateSub RadioButton1_CheckedChanged(ByVal sender AsSystem.Object, ByVal e AsSystem.EventArgs) Handles RadioButton1.CheckedChanged
+Me.BackColor = Color.Red
+EndSub
+
+PrivateSub RadioButton2_CheckedChanged(ByVal sender AsSystem.Object, ByVal e AsSystem.EventArgs) Handles RadioButton2.CheckedChanged
+Me.BackColor = Color.Green
+EndSub
+
+PrivateSub RadioButton3_CheckedChanged(ByVal sender AsSystem.Object, ByVal e AsSystem.EventArgs) Handles RadioButton3.CheckedChanged
+Me.BackColor = Color.Blue
+EndSub
+
+PrivateSub RadioButton4_CheckedChanged(ByVal sender AsSystem.Object, ByVal e AsSystem.EventArgs) Handles RadioButton4.CheckedChanged
+Me.ForeColor = Color.Black
+EndSub
+
+PrivateSub RadioButton5_CheckedChanged(ByVal sender AsSystem.Object, ByVal e AsSystem.EventArgs) Handles RadioButton5.CheckedChanged
+Me.ForeColor = Color.White
+EndSub
+
+PrivateSub RadioButton6_CheckedChanged(ByVal sender AsSystem.Object, ByVal e AsSystem.EventArgs) Handles RadioButton6.CheckedChanged
+Me.ForeColor = Color.Red
+EndSub
+EndClass

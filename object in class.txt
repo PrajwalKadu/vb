@@ -1,0 +1,36 @@
+Module Mybox 
+Class box
+    Public length As Double
+    Public breadth As Double
+    Public height As Double
+    Public sub SetLength(By Val Len As Double)
+    Length=LEN
+End sub
+Public Sub setbreadth(By Val bre As Double)
+Breadth=bre
+End Sub 
+Public Sub setheight(By Val hei As Double)
+Height=hei
+End sub
+Public Function get volume()Double
+Reuturn length *breadth*height
+End function
+End Class
+Sub Main()
+    Dim Box1,AS Box = New box()
+    Dim Box2,AS Box = New box()
+    Dim Volume As Double = 0.0
+    Box1.set height = 6.0
+    Box1.set length = 7.0
+    Box1.set breadth = 5.0
+
+    Box2.set height = 12.0
+    Box2.set length = 13.0
+    Box2.set breadth = 10.0
+    Volume=Box.getvolume()
+    Console.Writeline("Volume of Box1:{0}", Value)
+    Volume=Box2.getvolume()
+    Console.Writeline("Volume of Box1:{0}", Value) 
+    Console.Readkey()
+End Sub
+End Module

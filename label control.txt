@@ -1,0 +1,23 @@
+PublicClassForm1
+PrivateSub Form1_Load(ByVal sender AsSystem.Object, ByVal e AsSystem.EventArgs) HandlesMyBase.Load
+'Create two buttons to use as the accept and cancel buttons.
+'Set window width and height
+Me.Height = 300
+Me.Width = 560
+'Set the caption bar text of the form.
+Me.Text = "tutorialspoint.com"
+'Display a help button on the form.
+Me.HelpButton = True
+EndSub
+
+PrivateSub Label1_Click(ByVal sender AsSystem.Object, ByVal e AsSystem.EventArgs) Handles Label1.Click
+        Label1.Location = NewPoint(50, 50)
+        Label1.Text = "You have just moved the label"
+EndSub
+PrivateSub Label1_DoubleClick(ByVal sender AsSystem.Object, ByVal e AsSystem.EventArgs) Handles Label1.DoubleClick
+Dim Label2 AsNewLabel
+        Label2.Text = "New Label"
+        Label2.Location = NewPoint(Label1.Left, Label1.Height + Label1.Top + 25)
+Me.Controls.Add(Label2)
+EndSub
+EndClass

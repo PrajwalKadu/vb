@@ -1,0 +1,10 @@
+PublicClassForm1
+
+PrivateSub Form1_Load(ByVal sender AsSystem.Object, ByVal e AsSystem.EventArgs) HandlesMyBase.Load
+Me.Text = "tutorialspoint.com"
+EndSub
+
+PrivateSub Button1_Click(ByVal sender AsSystem.Object, ByVal e AsSystem.EventArgs) HandlesBtnMessage.Click
+MessageBox.Show("Thank You" + "Rutuja" + " from" + "Microsoft")
+EndSub
+EndClass

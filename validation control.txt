@@ -1,0 +1,92 @@
+using System;
+usingSystem.Collections.Generic;
+usingSystem.Linq;
+usingSystem.Web;
+usingSystem.Web.UI;
+usingSystem.Web.UI.WebControls;
+
+publicpartialclass_Default :System.Web.UI.Page
+{
+protectedvoidPage_Load(object sender, EventArgs e)
+    {
+    }
+protectedvoid Button1_Click1(object sender, EventArgs e)
+    {
+string nm = TextBox1.Text;
+string mob = TextBox2.Text;
+stringem = TextBox3.Text;
+string dob = TextBox4.Text;
+stringuid = TextBox5.Text;
+stringnat = TextBox6.Text;
+string ad = TextBox7.Text;
+        form1.Visible = false;
+        Label1.Text = "NAME : " + nm;
+        Label2.Text = "MOBILE NUMBER : " + mob;
+        Label3.Text = "E-MAIL : " + em;
+        Label7.Text = "DOB : " + dob;
+        Label8.Text = "UID : " + uid;
+        Label9.Text = "NATIONALITY : " + nat;
+        Label10.Text = "ADDRESS : " + ad;
+    }
+protectedvoid RadioButton1_CheckedChanged(object sender, EventArgs e)
+    {
+if (RadioButton1.Checked == true)   
+        {
+stringgn = RadioButton1.Text;
+            Label4.Text = "GENDER : " + gn;
+        }
+    }
+protectedvoid RadioButton2_CheckedChanged(object sender, EventArgs e)
+    {
+if (RadioButton2.Checked == true)
+        {
+string gn1 = RadioButton2.Text;
+            Label4.Text = "GENDER : " +gn1;
+        }
+    }
+protectedvoid DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+    {
+stringcs = DropDownList1.SelectedItem.Text;
+        Label5.Text = "COURCE : " + cs;   
+    }
+protectedvoid CheckBox1_CheckedChanged(object sender, EventArgs e)
+    {
+if (CheckBox1.Checked == true)
+        {
+string cat = CheckBox1.Text;
+            Label6.Text = "CATEGORY : " + cat;
+        }
+    }
+protectedvoid CheckBox2_CheckedChanged(object sender, EventArgs e)
+    {
+if (CheckBox2.Checked == true)
+        {
+string cat1 = CheckBox2.Text;
+            Label6.Text = "CATEGORY : " +cat1;
+        }
+    }
+protectedvoid CheckBox3_CheckedChanged(object sender, EventArgs e)
+    {
+if (CheckBox3.Checked == true)
+        {
+string cat2 = CheckBox3.Text;
+            Label6.Text = "CATEGORY : " +cat2;
+        }
+    }
+protectedvoid CheckBox4_CheckedChanged(object sender, EventArgs e)
+    {
+if (CheckBox4.Checked == true)
+        {
+string cat3 = CheckBox4.Text;
+            Label6.Text = "CATEGORY : " +cat3;
+        }
+    }
+protectedvoid CheckBox5_CheckedChanged(object sender, EventArgs e)
+    {
+if (CheckBox5.Checked == true)
+        {
+string cat4 = CheckBox5.Text;
+            Label6.Text = "CATEGORY : "+cat4 ;
+        }
+    } 
+}

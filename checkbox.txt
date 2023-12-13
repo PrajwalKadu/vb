@@ -1,0 +1,41 @@
+PublicClassForm1
+PrivateSub Form1_Load(ByVal sender AsSystem.Object, ByVal e AsSystem.EventArgs) HandlesMyBase.Load
+Me.Text = "tutorialspoint.com"
+        Label1.Visible = False
+        TextBox1.Visible = False
+        TextBox1.Multiline = True
+EndSub
+
+PrivateSub Button1_Click(ByVal sender AsSystem.Object, ByVal e AsSystem.EventArgs) Handles Button1.Click
+Dim str AsString
+        str = ""
+If CheckBox1.Checked = TrueThen
+            str &= CheckBox1.Text
+            str &= ""
+EndIf
+If CheckBox2.Checked = TrueThen
+            str &= CheckBox2.Text
+            str &= ""
+EndIf
+If CheckBox3.Checked = TrueThen
+            str &= CheckBox3.Text
+            str &= ""
+EndIf
+If CheckBox4.Checked = TrueThen
+            str &= CheckBox4.Text
+            str &= ""
+EndIf
+If str <>NothingThen
+MsgBox(str + vbLf + "Thank you")
+EndIf
+EndSub
+
+PrivateSub CheckBox4_CheckedChanged(ByVal sender AsSystem.Object, ByVal e AsSystem.EventArgs)
+        Label1.Visible = True
+        TextBox1.Visible = True
+EndSub
+
+PrivateSub CheckBox2_CheckedChanged(ByVal sender AsSystem.Object, ByVal e AsSystem.EventArgs) Handles CheckBox2.CheckedChanged
+
+EndSub
+EndClass

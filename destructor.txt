@@ -1,0 +1,20 @@
+ModuleModule1
+
+ClassSample
+Public Sub New()
+Console. WriteLine ("Constructor called")
+EndSub
+
+Protected Overrides Sub Finalize ()
+Console. WriteLine ("Destructor called")
+EndSub
+Public Sub SayHello()
+Console. WriteLine("Hello World")
+EndSub
+EndClass
+
+SubMain()
+Dim obj As New Sample()
+obj. Say Hello()
+EndSub
+EndModule

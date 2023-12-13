@@ -1,0 +1,54 @@
+PublicClassForm1
+
+PrivateSub Form1_Load(ByVal sender AsSystem.Object, ByVal e AsSystem.EventArgs) HandlesMyBase.Load
+'Set the caption bar text of the form.
+Me.Text = "tutorialspoint.com"
+EndSub
+'sends the selected items to the list box
+
+PrivateSub Button1_Click(ByVal sender AsSystem.Object, ByVal e AsSystem.EventArgs) Handles Button1.Click
+If ComboBox1.SelectedIndex > -1 Then
+DimsindexAsInteger
+sindex = ComboBox1.SelectedIndex
+DimsitemAsObject
+sitem = ComboBox1.SelectedItem
+ListBox1.Items.Add(sitem)
+EndIf
+EndSub
+'populated the list
+
+PrivateSub Button2_Click(ByVal sender AsSystem.Object, ByVal e AsSystem.EventArgs) Handles Button2.Click
+ComboBox1.Items.Clear()
+ComboBox1.Items.Add("Safety")
+ComboBox1.Items.Add("Security")
+ComboBox1.Items.Add("Governance")
+ComboBox1.Items.Add("Good Music")
+ComboBox1.Items.Add("Good Movies")
+ComboBox1.Items.Add("Good Books")
+ComboBox1.Items.Add("Education")
+ComboBox1.Items.Add("Roads")
+ComboBox1.Items.Add("Health")
+ComboBox1.Items.Add("Food for all")
+ComboBox1.Items.Add("Shelter for all")
+ComboBox1.Items.Add("Industrilisation")
+ComboBox1.Items.Add("Peace")
+ComboBox1.Items.Add("Liberty")
+ComboBox1.Items.Add("Freedom for Speech")
+        ComboBox1.Text = "Select from...."
+EndSub
+'Sorting the list
+
+PrivateSub Button3_Click(ByVal sender AsSystem.Object, ByVal e AsSystem.EventArgs) Handles Button3.Click
+        ComboBox1.Sorted = True
+EndSub
+'clear the list
+
+PrivateSub Button4_Click(ByVal sender AsSystem.Object, ByVal e AsSystem.EventArgs) Handles Button4.Click
+ComboBox1.Items.Clear()
+EndSub
+'displaying the selected itemon the label
+
+PrivateSub ComboBox1_SelectedIndexChanged(ByVal sender AsSystem.Object, ByVal e AsSystem.EventArgs) Handles ComboBox1.SelectedIndexChanged
+        Label1.Text = ComboBox1.SelectedItem.ToString()
+EndSub
+EndClass

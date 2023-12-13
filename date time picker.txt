@@ -1,0 +1,24 @@
+Public Class Form1
+
+    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Me.Text = "javapoint.com"
+        Button1.Text = "calculate Days"
+        Label1.Text = "Calculate the Total days from DOB to current date"
+        Label2.Text = "Select the DOB"
+        Label3.Text = "Current Date"
+        Label4.Text = "Total Days"
+        DateTimePicker1.Format = DateTimePickerFormat.Long
+
+    End Sub
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        Dim dp1 As Date = DateTimePicker1.Value
+        Dim dp2 As Date = DateTimePicker2.Value
+        Dim result As TimeSpan = dp2.Subtract(dp1)
+        Dim ds As Integer = result.TotalDays
+        TextBox1.Text = ds
+        TextBox1.ForeColor = Color.Red
+        MsgBox("Days=" & ds)
+
+    End Sub
+    End Class

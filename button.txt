@@ -1,0 +1,8 @@
+PublicClassForm1
+
+PrivateSub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        Button1.Text = "Click Me"
+MsgBox("Visit here:https://www.javapoint.com")
+EndSub
+EndClass
+

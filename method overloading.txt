@@ -1,0 +1,22 @@
+Module Module1
+    Class Sample
+        Public Sub Add(ByVal num1 As Integer, ByVal num2 As Integer)
+            Dim sum As Integer = 0
+            sum = num1 + num2
+            Console.WriteLine("sum is : {0}", sum)
+        End Sub
+        Public Sub Add(ByVal num1 As Integer, ByVal num2 As Double)
+            Dim sum As Integer = 0
+            sum = num1 + num2
+            Console.WriteLine("sum is : {0}", sum)
+        End Sub
+    End Class
+
+    Sub Main()
+        Dim obj As New Sample()
+        obj.Add(10, 20)
+        obj.Add(10, 20.8)
+        Console.ReadLine()
+    End Sub
+
+End Module

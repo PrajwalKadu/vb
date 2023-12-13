@@ -1,0 +1,22 @@
+PublicClassForm1
+
+PrivateSub Form1_Load(ByVal sender AsSystem.Object, ByVal e AsSystem.EventArgs) HandlesMyBase.Load
+'Set the caption bar text of the form.
+Me.Text = "tutorialspont.com"
+ListBox1.Items.Add("Canada")
+ListBox1.Items.Add("USA")
+ListBox1.Items.Add("UK")
+ListBox1.Items.Add("Japan")
+ListBox1.Items.Add("Russia")
+ListBox1.Items.Add("China")
+ListBox1.Items.Add("INDIA")
+EndSub
+
+PrivateSub Button1_Click(ByVal sender AsSystem.Object, ByVal e AsSystem.EventArgs) Handles Button1.Click
+MsgBox("You have selected" + ListBox1.SelectedItem.ToString())
+EndSub
+
+PrivateSub ListBox1_SelectedIndexChanged(ByVal sender AsSystem.Object, ByVal e AsSystem.EventArgs) Handles ListBox1.SelectedIndexChanged
+        Lable2.Text = ListBox1.SelectedItem.ToString()
+EndSub
+EndClass
